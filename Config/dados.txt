@@ -1,0 +1,3 @@
+view-source:https://getbootstrap.com/docs/4.0/examples/pricing/
+https://getbootstrap.com/docs/4.0/examples/pricing/
+https://getbootstrap.com/docs/4.0/examples/
