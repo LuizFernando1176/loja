@@ -1,3 +1,10 @@
 view-source:https://getbootstrap.com/docs/4.0/examples/pricing/
 https://getbootstrap.com/docs/4.0/examples/pricing/
 https://getbootstrap.com/docs/4.0/examples/
+galeria expansiva (https://codyhouse.co/gem/expandable-image-gallery/)
+galeraia top (http://factory.brainleaf.eu/donkeyGallery/)
+galeria pronta para while (http://www.thepetedesign.com/demos/flipping_gallery_demo.html)
+integração com picasa (https://github.com/Kris-B/nanoGALLERY)
+bootstrep (https://github.com/blueimp/Gallery)
+estilo loja online (http://kopolo.ru/for-webmasters/kgallery/example_vertical.html)
+outra galeria (https://bxslider.com/install/)

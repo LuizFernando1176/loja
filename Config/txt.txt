@@ -1,0 +1,11 @@
+lembra de caonfigurar , configuração 1 , 2 e etc
+
+
+
+
+botao de compartilhar
+
+https://ayltoninacio.com.br/blog/botoes-share-redes-sociais-html-puro
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://ayltoninacio.com.br/blog/imagens-responsivas-dinamicas-com-sizes-e-srcset">
+	<img width="25" height="25" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt="">
+</a>
