@@ -1,0 +1,44 @@
+<?php
+$target_dir = "uploads/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+// Verificação de arquivo
+if(isset($_POST["submit"])) {
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        echo "Arquivo e uma imagem - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        echo "Este arquivo não e uma imagem.";
+        $uploadOk = 0;
+    }
+}
+//checa se existe arquivo , para evitar envio em branco 
+if (file_exists($target_file)) {
+    echo "Porfavor, escolha um arquivo valido.";
+    $uploadOk = 0;
+}
+// checar o tamanho do arquivo
+if ($_FILES["fileToUpload"]["size"] > 500000) {
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
+}
+// filtar a extensão
+if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+&& $imageFileType != "gif" ) {
+    echo "Porfavor, apenas JPG, JPEG, PNG & GIF são aceitos.";
+    $uploadOk = 0;
+}
+// checa se todos requisitos são aceitos
+if ($uploadOk == 0) {
+    echo "Desculpe, não foi possivel finalizar o upload.";
+// se sim informe:
+} else {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        echo "O Arquivo ". basename( $_FILES["fileToUpload"]["name"]). " foi upado com sucesso!!!.";
+    } else {
+        echo "Desculpe , ocorreu um erro.";
+    }
+}
+?>
