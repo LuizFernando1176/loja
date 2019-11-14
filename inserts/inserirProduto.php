@@ -10,7 +10,7 @@ $user = $_POST ['user'];
 $id_tag = $_POST ['id_tag'];
 
 $coon = conectar();
-$queryAdicionaProduto = ("INSERT INTO `prod`(`id`, `nome_produto`, `descricao`, `preco`, `tamnho`, `data`, `capa`, `user`, `id_tag`) VALUES ('$nome_produto','$descricao','$preco','$data','$capa','$user','$id_tag') ");
+$queryAdicionaProduto = ("INSERT INTO `prod`( `nome_produto`, `descricao`, `preco`, `tamnho`, `data`, `capa`, `user`, `id_tag`) VALUES ('$nome_produto','$descricao','$preco','$data','$capa','$user','$id_tag') ");
 $queryResposta = mysqli_query($coon, $queryAdicionaProduto);
 
 if ($queryResposta) {
